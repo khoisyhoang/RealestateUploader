@@ -33,7 +33,7 @@ export default function RootLayout({
           <AppRouterCacheProvider>
             
             <Header />
-            <div className="container px-16px w-[1200px] mx-auto ">
+            <div className="container px-16px mx-auto ">
               <ThemeProvider theme={theme}>
                 {children}
               </ThemeProvider>

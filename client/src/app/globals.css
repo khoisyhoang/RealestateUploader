@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@utility center-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@utility btn {
+    background-color: #AD8B73;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: #E3CAA5;
+}
