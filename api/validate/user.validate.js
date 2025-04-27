@@ -13,15 +13,15 @@ export const validateUser = (req, res, next) => {
             .max(30)
 
     })
-    console.log(req.body);
+ 
     const {error} = schema.validate(req.body);
     
     
     if (error){
-        console.log(error);
+     
         res.json({
             code: "error",
-            message: error
+            message: error.details[0].message
         })
         return;
     }
