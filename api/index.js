@@ -3,7 +3,11 @@ import mongoose from 'mongoose';
 import 'dotenv/config'
 
 const app = express();
+import cors from 'cors';
+
 app.use(express.json());
+app.use(cors()); // Enable CORS for all routes
+
 mongoose.connect(process.env.MONGO_URI);
 
 // import routes

@@ -10,6 +10,8 @@ export const signup = (req, res) => {
 
 export const signupPost = async (req, res) => {
     // get request from frontend
+    console.log(req.body);
+    
     const { username, email, password } = req.body;
     
     
